@@ -1,0 +1,223 @@
+#scenario_page .actions_container.print_icon {
+    position: fixed;
+    right: 20px;
+}
+
+.scenario_section {
+    margin-bottom: 30px;
+}
+
+.scenario_scenario {
+    display: block;
+}
+
+.scenario_images_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scenario_images_wrapper_print .scenario_image_wrapper {
+    padding: 5px;
+}
+
+.scenario_images_wrapper_print .full_image_container .image_container {
+    height: 100px;
+    width: 100px;
+}
+
+.scenario_images_wrapper_print .full_image_container .media_container {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+.scenario_images_wrapper_print .scenario_image_container {
+    padding: 0
+}
+
+.scenario_images_wrapper_print .scenario_image_container i {
+    font-size: 20px;
+}
+
+
+.scenario_scenario:first-letter {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.full_image_container {
+    position: relative;
+}
+
+.scenario_image_division {
+    position: relative;
+}
+
+.division_overlay {
+    position: absolute;
+    top: 0;
+}
+
+.division_overlay.overlay_points {
+    right: 0;
+}
+
+.division_overlay_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.division_overlay .key_name {
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: 21px;
+}
+
+.division_overlay .image_points {
+    background-color: rgb(114, 206, 129);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 37px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+}
+
+.key_name.good_answer{
+    background-color: rgb(114, 206, 129);
+}
+.key_name.bad_answer{
+    background-color: rgba(212, 65, 65, 0.829);
+}
+
+.division_overlay .image_points.negative_points {
+    background-color: rgba(212, 65, 65, 0.829);
+}
+
+.scenario_image_division .image_container {
+    width: 100px;
+    height: 100px;
+}
+
+.scenario_image_division .media_container {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.scenario_image_container .image_container i,
+.scenario_image_container .full_image_container i {
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+}
+
+.full_image_container .image_container {
+    height: 200px;
+    width: 200px;
+}
+
+.full_image_container .image_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #ffffff33;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scenario_image_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+
+.scenario_image_divisions_container {
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scenario_image_wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario_image_container,
+.scenario_malus_wrapper,
+.scenario_poidum_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 15px 15px 0px 0px;
+}
+
+.scenario_image_container i {
+    font-size: 60px;
+}
+
+.podium_container {
+    /* width: 33%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#print_container {
+    align-items: center;
+    padding: 15px 0px;
+}
+
+#scenario_overscores {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#scenario_overscores .scenario_image_wrapper {
+    width: 20%;
+}
+
+#enigmas_container .scenario_image_wrapper {
+    width: 25%;
+}
+
+.scenario_enigma_points {
+    display: flex;
+    flex-direction: column;
+}
+
+.scenario_enigma_points_and_balises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scenario_image_wrapper h5 {
+    text-align: center;
+}

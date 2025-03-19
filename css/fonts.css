@@ -1,0 +1,108 @@
+
+
+
+@font-face {
+    font-family: 'Zombie';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/zombie_3/Zombie.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Spider';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/spider_font/spiderfont.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Mortified Drip';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/mortified_drip/MortifiedDrip.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'October Crow';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/october_crow/October_Crow.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Ancient Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ancient/Ancient_Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'TrajanPro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/TrajanPro/TrajanPro.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'TrajanPro Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/TrajanPro/TrajanPro-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Zombie';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Zombie/ZOMBIE.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Stranger Things';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/stranger_things/StrangerThings-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Stranger';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/stranger/Stranger.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Monsters';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/monsters/MONSTERS.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Monster';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/monster/MONSTER.tff) format('truetype');
+}
+
+
+/* Icones */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/material/MaterialIcons-Regular.ttf) format('truetype');
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+
+}
+
+@font-face {
+    font-family: 'Material Icons Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/material/MaterialIconsOutlined-Regular.otf) format('truetype');
+    src: local('Material Icons Outlined'),
+        local('MaterialIconsOutlined-Regular'),
+
+}
+@font-face {
+    font-family: 'Caribbean';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Caribbean/Caribbean.ttf) format('truetype');
+}

@@ -1,0 +1,482 @@
+.game_page_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+/************************/
+/****** Structure *******/
+/************************/
+#investigation_main_column {
+  width: 85%;
+  height: 100vh;
+}
+
+#investigation_side_column {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#investigation_side_column_container {
+
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*********************/
+/****** Message *******/
+/*********************/
+
+#game_message_container{
+  background-color: rgb(0 0 0 / 84%);
+  color: white;
+}
+/*********************/
+/****** Enigma *******/
+/*********************/
+#enigmas_list_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: -webkit-fill-available;
+  margin: 15px;
+}
+
+.enigma_list_item {
+  margin: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.534);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enigma_title_container {
+  display: flex;
+}
+
+.importance_container {
+  margin-left: 15px;
+}
+
+.enigma_list_item .disable_enigma {
+  display: none;
+}
+
+.enigma_list_item .failed_enigma {
+  display: none;
+}
+
+.enigma_list_item .resolved_enigma {
+  display: none;
+}
+
+.enigma_list_item .skipped_enigma {
+  display: none;
+}
+
+.enigma_list_item i {
+  font-size: 30px;
+}
+
+.enigma_list_item .show_enigma {
+  cursor: pointer;
+}
+
+.enigma_list_item .show_enigma:hover {
+  font-size: 40px;
+}
+
+#wait_for_puzzle_to_finish_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#good_answer_container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: auto;
+  z-index: 1;
+  background-color: rgb(0 0 0 / 84%);
+  opacity: 0;
+  flex-direction: column;
+}
+
+#good_answer_text {
+  color: white;
+  font-size: 50px;
+  opacity: 0;
+}
+#good_answer_images_container{
+  opacity: 0;
+}
+.good_answer_images_container {
+  display: flex;
+}
+
+.wrong_answer_image_container {
+  padding: 20px;
+}
+
+.good_answer_image_container {
+  height: 60vh;
+}
+
+.good_answer_image_container img {
+  height: -webkit-fill-available;
+}
+
+#stamps_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.stamp_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.stamp_container img{
+  height: 80vh;
+}
+
+#enigma_container {
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: none;
+  height: calc(100vh - 30px);
+}
+
+#enigma_title_container {
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#enigma_title {
+  font-size: 40px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.534);
+  width: 100%;
+  margin-right: 15px;
+}
+
+#enigma_back {
+  cursor: pointer;
+  font-size: 40px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+#enigma_back:hover {
+  color: gray;
+}
+
+#enigma_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.enigma_image_container {
+  flex-basis: 16.66%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer_number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.493);
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+
+.enigma_image_container img {
+  width: 100px;
+  height: 100px;
+}
+
+.answer_container {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: red;
+}
+
+
+/*********************/
+/****** Rapport ******/
+/*********************/
+
+#rapport_wrapper {
+  display: none;
+  opacity: 0;
+}
+
+#rapport_container {
+  width: calc(100% - 15px);
+  background: rgba(255, 255, 255, 0.534);
+  height: calc(100vh - 30px);
+
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+#rapport_container .title {
+  font-size: 80px;
+}
+
+/********************************/
+/****** Puzzle and badges *******/
+/********************************/
+
+#badges_and_puzzle_container {
+  background-color: rgba(255, 255, 255, 0.534);
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#badges_container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.badge_container {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+}
+
+.badge_container.badge_showing {
+  opacity: 1;
+}
+
+/* .badge_image {
+  width: 50px;
+  height: 50px;
+} */
+
+#team_name_container,
+#puzzle_title {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.534);
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 50px;
+}
+
+
+/*********************/
+/******* Timer *******/
+/*********************/
+#main_investigation_timer_ended {
+  display: none;
+  font-size: 50px;
+  text-align: center;
+}
+
+#countdown_container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.534);
+  margin-bottom: 15px;
+  padding: 7px;
+}
+
+#investigation_timer_container {
+  list-style-type: none;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-block-start: 0;
+}
+
+/*********************/
+/****** Loading ******/
+/*********************/
+#loading_enigma_wrapper {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.534);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-right: 15px;
+}
+
+#loading_enigma_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+}
+
+/*********************/
+/******* Clues *******/
+/*********************/
+#clues_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#clues_container .puzzle_container {
+  width: 31%;
+  background-color: rgba(255, 255, 255, 0.534);
+  margin: 1%;
+  padding: 5px;
+  height: fit-content;
+}
+
+#clues_container .puzzle_title,
+#clues_container .enigma_container {
+  padding: 5px;
+}
+
+#clues_container .puzzle_content {
+  display: flex;
+  flex-direction: column;
+}
+
+#clues_container .enigma_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#clues_container .enigma_images {
+  display: flex;
+  flex-direction: row;
+}
+
+#clues_container .enigma_images img {
+  width: 50px;
+  height: 50px;
+  padding-left: 3px;
+}
+
+/*********************/
+/******* Final Vote *******/
+/*********************/
+#final_answer_container{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: auto;
+  z-index: 1;
+  background-color: rgb(0 0 0 / 84%);
+  opacity: 0;
+  flex-direction: column;
+  color: white;
+}
+
+#final_answer_text {
+  color: white;
+  font-size: 50px;
+}
+
+.final_answer_image_container {
+  height: 60vh;
+}
+
+.final_answer_image_container img {
+  height: -webkit-fill-available;
+}
+/*********************/
+/******* Final *******/
+/*********************/
+#final_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.534);
+}
+#final_level_image img{
+  width:200px;
+  height:200px;
+}
+#final_page_title {
+  font-size: 100px;
+
+  padding: 30px;
+  border-radius: 8px;
+}

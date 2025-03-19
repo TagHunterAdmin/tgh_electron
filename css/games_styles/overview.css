@@ -1,0 +1,258 @@
+.modal_team_detail .modal-dialog {
+    margin: 10px auto;
+}
+
+.modal_team_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player_table_image {
+    width: 60px;
+}
+
+.modal_team_timing,
+.modal_team_score,
+.modal_team_enigmas {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_team_detail table th,
+.modal_team_detail table td {
+    text-align: center;
+}
+
+.modal_subcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.modal_reset_team {
+    display: flex;
+    justify-content: center;
+}
+
+.modal_team_box_container {
+    width: 30%;
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.modal_team_box_container .actions_container .action-icon {
+    z-index: 1000;
+}
+
+.modal_team_box_container img {
+    width: 100%;
+}
+
+.modal_enigma_points,
+.modal_team_box_container .actions_container,
+.modal_enigma_text_points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview_actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Launched game overview page*/
+.overview_tables_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.overview_table_container {
+    width: 100%;
+}
+
+.overview_table_container,
+.overview_actions,
+.devices_wrapper,
+.game_ended {
+    padding-bottom: 20px;
+}
+
+.game_ended {
+    text-align: center;
+}
+
+.devices_wrapper {
+    width: 100%;
+}
+
+.devices_wrapper p {
+    padding-right: 10px;
+}
+
+.used_device_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.overview_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams_all_scores_container table td .ended {
+    background-color: red;
+}
+
+.teams_all_scores_container table td .continuing {
+    background-color: rgb(48, 230, 35);
+}
+
+.devices_container {}
+
+
+/***** Team Details Modal *******/
+
+.modal-spinner {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+
+.modal_team_box_container {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+/**********************/
+/***** SURVIVAL *******/
+/**********************/
+
+/***** Enigma success fail colors *******/
+.enigma_both {
+    border: 2px solid orange;
+}
+
+.enigma_success {
+    border: 2px solid green;
+}
+
+.enigma_wrong {
+    border: 2px solid red;
+}
+
+.enigma_none {
+    border: 2px solid gray;
+}
+
+/**********************/
+/***** Investigation *******/
+/**********************/
+/****** Investigation timer *******/
+
+#investigation_timer_container_ended{
+    display: none;
+}
+.timer_investigation ul {
+    list-style: none;
+    /* margin: 50px 0; */
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.timer_investigation li {
+    display: inline-block;
+}
+.timer_investigation li span {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+}
+/****** Investigation Enigmas List *******/
+.legend_element {
+    padding-right: 15px;
+    /* margin-bottom: -23px; */
+}
+
+.overview_investigation_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.overview_investigation_container .puzzles_container, #current_puzzle_and_actions_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.overview_investigation_container .puzzle_container {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    margin: 15px;
+}
+#keystrokes_wrapper{
+    width: 100%;
+}
+.overview_investigation_container .puzzle_container .puzzle_container_inner{
+    width: 100%;
+}
+.puzzles_container .puzzle_container{
+    width: 100%;
+    align-items: flex-start;
+}
+.puzzles_container .puzzle_container .actions_container {
+    justify-content: flex-end;
+}
+.enigma_list_item.resolved {
+    border: 3px solid #28b6267d;
+}
+
+.enigma_list_item.failed {
+    border: 3px solid #ff00007d;
+}
+
+.enigma_list_item.skipped {
+    border: 3px solid #ff73017d;
+}
+
+.enigma_list_item.not_yet {
+    border: 3px solid #4946447d;
+}
+
+
+#answers_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#answers_container span {
+    font-weight: bold;
+}

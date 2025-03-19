@@ -1,0 +1,341 @@
+/* #team_1_container {
+    opacity: 1;
+} */
+
+.team_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagquest_left_column,
+.tagquest_right_column,
+.tagquest_center_column {
+    height: 100vh;
+    padding-top: 30px;
+    padding-bottom: 15px;
+
+}
+
+.tagquest_timer,
+.tagquest_malus_wrapper,
+.tagquest_late_malus_container,
+.tagquest_combos_container,
+.team_advancement_title,
+.tagquest_timer_wrapper,
+.combos_padding {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.element_background_image {
+    width: 100%;
+    position: absolute;
+}
+.element_content{
+    z-index: 10;
+    width: 80%;
+}
+/************************************************/
+/******************* Timer **********************/
+/************************************************/
+#tagquest_timer{
+    position: absolute;
+    top: 0;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    margin-top: 30px;
+    /* height: -webkit-fill-available; */
+    /* margin-left: 10px;
+    height: 124px; */
+    /* margin-top: 15px; */
+}
+/* #tagquest_timer .game_timer,
+#tagquest_timer.timer_ended {
+    padding-left: 15px;
+    padding-top: 15px;
+    height: auto;
+    z-index: 10;
+    width: 100%;
+    position: relative;
+} */
+#main_tagquest_timer, #taquest_timer_late_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#taquest_timer_late_wrapper{
+    display: none;
+
+}
+
+.timer_tagquest {
+    list-style: none;
+    /* margin: 50px 0; */
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.timer_tagquest  li {
+    display: inline-block;
+}
+ul.timer_tagquest   {
+    margin-bottom: 0;
+}
+.timer_tagquest li span {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+}
+#taquest_timer_late_wrapper .timer_tagquest li span {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.timer_tagquest  li.seperator {
+    font-size: 40px;
+    line-height: 30px;
+    vertical-align: top;
+}
+.timer_tagquest  li p {
+    color: #a7abb1;
+    font-size: 25px;
+}
+/************************************************/
+/********* Images wrapper: images ***************/
+/************************************************/
+
+#taghunter_images_wrapper {
+
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.taghunter_images_element_container {
+    /* height: 100vh; */
+    /* padding: 65px; */
+    padding-bottom: 15px;
+}
+
+.taghunter_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image_division_container,
+.image_division_container img {
+    width: 100%;
+}
+
+.full_image_name {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/************************************************/
+/********* Center Column: Name ******************/
+/************************************************/
+
+
+.tagquest_center_column {
+    width: -webkit-fill-available;
+}
+
+.tagquest_team_name_container {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************************************/
+/****** Right Column: Score, recap images *******/
+/************************************************/
+
+
+.tagquest_right_column {
+    /* width: 400px; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.tagquest_right_column .pts_element{
+    font-size: 10px;
+}
+.team_advancement_title {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
+.team_advancement_images_liste {
+    width: 100%;
+}
+
+.team_advancement_image_container {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .team_advancement_image_container img{
+    padding: 6px 9px;
+} */
+.main_image_name {
+    width: 100%;
+   min-height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.team_image_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.team_image_square {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* width: 25%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team_advancement_image_container img{
+    padding: 0 0;
+}
+.team_advancement_images_liste img {
+    /* width: 100%; */
+    /* height: 60px; */
+}
+
+/************************************************/
+/****** Left Column: Timer, malus, combos *******/
+/************************************************/
+
+.tagquest_left_column {
+    /* width: 400px; */
+    /* width: 30%; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    padding-left: 10px;
+}
+.tagquest_left_column .pts_element{
+    font-size: 10px;
+}
+/* Malus */
+.tagquest_malus_wrapper,
+.tagquest_malus_container,
+.malus_square,
+.tagquest_combo_name,
+.tagquest_combo_points,
+.tagquest_combo_times,
+.tagquest_combos_container,
+.tagquest_timer_wrapper {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: -webkit-fill-available; */
+}
+
+.tagquest_malus_wrapper{
+    margin-top: 15px;
+}
+.tagquest_combos_container{
+    margin-top: 10px;
+}
+.tagquest_malus_container,
+.tagquest_combos_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 90px; */
+    /* width: 100%; */
+}
+
+.malus_square,
+.tagquest_combo_times,
+.tagquest_combo_points {
+    width: 60px;
+    height: 60px;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+.malus_square img {
+    width: 50px;
+    padding: 5px;
+}
+
+
+/* Combos */
+.tagquest_combos_container {
+    /* height: -webkit-fill-available;
+    min-height: 200px; */
+
+}
+.combos_padding{
+    padding: 0 26px;
+    align-items: flex-end;
+ padding-bottom: 16px;
+}
+
+.tagquest_combo_container {
+    /* width: 25%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 50px; */
+    z-index: 10;
+    height: 100px;
+    margin-bottom: 22px;
+}
+
+.tagquest_combo_name {
+    padding: 0 5px;
+}
+
+.tagquest_combo_name img {
+    width: 100%;
+}
+
+.tagquest_combo_times,
+.tagquest_combo_points {
+    width: 100%;
+
+}

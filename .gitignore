@@ -1,3 +1,4 @@
-
-node_modules
-package-lock.json
+/communication_tgh
+/node_modules
+/php
+/export

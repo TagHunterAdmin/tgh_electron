@@ -1,0 +1,239 @@
+/****** Progress bar *******/
+
+.progress_bar_container {
+  padding-top: 21px;
+  height: 20vh;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#progression_wrapper {
+
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+.progress_bar_wrapper {
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  /* padding: 0 50px; */
+}
+
+.progress_bar {
+  height: 64px;
+  display: flex;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 30px;
+  position: relative;
+}
+#progress_bar_gauge_without_back img{
+  width: 100%;
+  height: 64px;
+}
+#progress_bar_gauge_without_back {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 64px;
+}
+
+#progress_bar_content {
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  padding: 9px 0;
+}
+
+#progress_bar_content_inside {
+  height: 50px;
+  width: 0;
+}
+
+#progress_bar_content img {
+  width: 100%;
+}
+
+
+#detective {
+  position: absolute;
+  font-size: 50px;
+  width: 30px;
+}
+
+#detective img {
+  width: 100%;
+}
+
+.step_checkmark {
+  width: 40px;
+}
+
+.step_checkmark img {
+  width: 100%;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  fill: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.step {
+  flex-grow: 1;
+  position: relative;
+}
+
+.step-progress {
+  width: 100%;
+  height: 30px;
+  /* background: #fcb034; */
+}
+
+.step.first_step .step-progress,
+.step.first_step.done .step-progress:after {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.step.last_step .step-progress,
+.step.last_step.done .step-progress:after {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.icon-wrapper {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  z-index: 1;
+}
+
+.icon-wrapper-end {
+  right: 0;
+}
+
+.step.done .step-progress:after {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 0;
+  /* background-color: #0087B3; */
+  animation: growLine 1s linear forwards;
+}
+
+.icon-checkmark {
+  position: absolute;
+  /* top: -0.55em;*/
+  left: 0;
+  border: 0.125em solid #fcb034;
+  background: #051B23;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.125em;
+  border-radius: 50%;
+  transition: all 0.25s linear;
+}
+
+.step.done .icon-checkmark {
+  background: #0087B3;
+  border-color: #0087B3;
+}
+
+.icon-checkmark .path1 {
+  stroke: #aaa;
+  stroke-width: 4;
+  stroke-linecap: square;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: empty;
+}
+
+.step.done .icon-checkmark .path1 {
+  animation: dash 5s linear forwards;
+  stroke: #fcb034;
+}
+
+.step-text {
+  position: absolute;
+  margin-left: -50%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: black;
+  margin-top: 0;
+  opacity: 0;
+  bottom: -30px;
+  width: max-content;
+  height: max-content;
+}
+
+.step_even.step-text {
+  top: -30px;
+}
+
+.step.done .step-text {
+  /* color: #0087B3; */
+  animation: dropText 0.5s linear forwards;
+  opacity: 1;
+  width: max-content;
+}
+
+/* .even_image img{
+  border: 2px solid red;
+} */
+.level_line {
+  height: 10px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -13px;
+  opacity: 0;
+}
+
+/* .level_line.level_line_even{
+  background-color: red;
+} */
+/* .step_even{
+  color: red;
+} */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes dropText {
+  to {
+    /* padding-top: 1em; */
+    opacity: 1;
+  }
+}

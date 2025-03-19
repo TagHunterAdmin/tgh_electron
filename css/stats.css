@@ -1,0 +1,16 @@
+.total_stats{
+    display: flex;
+    justify-content: space-around;
+}
+.total_stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.total_stat i, .total_stat_value{
+    font-size: 35px;
+}
+
+.total_pies_container{
+    display: flex;
+}

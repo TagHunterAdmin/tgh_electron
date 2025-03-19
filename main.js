@@ -97,7 +97,7 @@ function createWindow () {
 
   server.run();
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 1500, height: 800, icon:__dirname +'/images/logo_tag_hunter.ico'})
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://'+server.host+':'+server.port+'/')
